@@ -1,0 +1,218 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1280px;
+    min-width: 400px;
+    margin: 0 auto;
+    background-image: url("../img/double-bubble.png");
+    background-repeat: repeat;
+}
+
+.header{
+    font-size: 5vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    background-color: #222222;
+}
+
+.header p{
+    padding-left: 40px;
+    font-family: monospace;
+}
+
+.console{
+    color: #00FF00;
+}
+
+.nav-bar{
+    height: 8vh;
+    background-color: #222222;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding: 18px 30px;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.mid-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner{
+    height: 200px;
+    background-image: url("../img/moroccan-flower.png");
+    background-repeat: repeat;
+    box-shadow: 0px 5px 5px -3px black;
+}
+
+.section{
+    padding: 30px 50px 30px 50px;
+}
+
+.heading, .author, .content{
+    padding: 10px;
+}
+
+.author{
+    font-style: italic;
+}
+
+.content{
+    text-align: justify;
+}
+
+.aside{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    /* background-color: violet; */
+    background-image: url("../img/moroccan-flower-dark.png");
+    background-repeat: repeat;
+    padding: 25px;
+    max-height: 400px;
+    border-top: 4px white solid;
+    border-left: 4px white solid;
+}
+
+.aside aside{
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.quote{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.quoter{
+    font-size: 16px;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+.nav-link:hover{
+    background-color: #c5c5c5;
+    transition-duration: 0.7s;
+}
+
+/***making it responsive***/
+
+@media screen and (max-width: 768px){
+
+    .body{
+        width: 100%;
+        min-width: 400px;
+    }
+
+    .header p{
+        font-size: 4vh;
+    }
+
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    .nav-bar{
+        position: relative;
+        text-align: center;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        padding-right: 5px;
+    }
+
+    .nav-links{
+
+        /* position: fixed; */
+        background: #222222;
+        height: 50vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: polygon(100% 0px, 100% 0px, 100% 100%, 100% 100%);
+        -webkit-clip-path: polygon(100% 0px, 100% 0px, 100% 100%, 100% 100%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        /* text-align: center; */
+    }
+
+    .nav-links.open{
+        clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
+        -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%); /* at 100% 0%*/
+        pointer-events: all;
+    }
+
+    .nav-links li a{
+        font-size: 20px;
+    }
+
+    .nav-links li:nth-child(){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(){
+        transition: all 0.5s ease 0.4s
+    }
+    .nav-links li:nth-child(){
+        transition: all 0.5s ease 0.6s
+    }
+
+    .container{
+        transition: all 1s ease-out;
+    }
+
+    .container.open{
+        padding-top: 42vh;
+    }
+
+    .banner{
+        height: 3 0vh;
+    }
+
+    .aside{
+        visibility: hidden;
+        width: 0%;
+        padding: 0;
+        position: absolute;
+    }
+    
+}
