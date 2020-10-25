@@ -132,8 +132,8 @@ body{
 @media screen and (max-width: 768px){
 
     .body{
-        width: 100%;
-        min-width: 400px;
+        /* width: 100%; */
+        min-width: 360px;
     }
 
     .header p{
