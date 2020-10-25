@@ -131,10 +131,9 @@ body{
 
 @media screen and (max-width: 768px){
 
-    .body{
-        /* width: 100%; */
+    /* .body{
         min-width: 360px;
-    }
+    } */
 
     .header p{
         font-size: 4vh;
