@@ -51,8 +51,11 @@ body{
     text-decoration: none;
     font-size: 16px;
     color: white;
-    padding: 18px 30px;
+    padding: 15px 30px;
+}
 
+.active{
+    border-bottom: 3px solid white;
 }
 
 .container{
@@ -64,6 +67,7 @@ body{
 .mid-section{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .banner{
@@ -89,13 +93,20 @@ body{
     text-align: justify;
 }
 
+.code{
+    font-family: monospace;
+    background-color: #c5c5c5;
+    border: 1px solid grey;
+    border-radius: 2px;
+    padding: 0 2px 0 2px;
+}
+
 .aside{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     text-align: center;
-    width: 600px;
-    /* background-color: violet; */
+    width: 200px;
+    min-width: 200px;
     background-image: url("../img/moroccan-flower-dark.png");
     background-repeat: repeat;
     padding: 25px;
@@ -131,10 +142,6 @@ body{
 
 @media screen and (max-width: 768px){
 
-    /* .body{
-        min-width: 360px;
-    } */
-
     .header p{
         font-size: 4vh;
     }
@@ -162,8 +169,6 @@ body{
     }
 
     .nav-links{
-
-        /* position: fixed; */
         background: #222222;
         height: 50vh;
         width: 100%;
@@ -172,12 +177,11 @@ body{
         -webkit-clip-path: polygon(100% 0px, 100% 0px, 100% 100%, 100% 100%);
         transition: all 1s ease-out;
         pointer-events: none;
-        /* text-align: center; */
     }
 
     .nav-links.open{
         clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
-        -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%); /* at 100% 0%*/
+        -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
         pointer-events: all;
     }
 
