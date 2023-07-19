@@ -3,6 +3,7 @@ title:  "Modelling and Predicting Signals"
 mathjax: true
 layout: post
 categories: media
+excerpt: lorem ipsum dolor sit amit
 ---
 
 This article is about investigating an exponential signal and trying to model it using "simple" mathematical approach and a machine learning based approach. 
