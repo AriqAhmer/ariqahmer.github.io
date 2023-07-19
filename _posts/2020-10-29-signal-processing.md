@@ -1,7 +1,7 @@
 ---
 title:  "Modelling and Predicting Signals"
 mathjax: true
-layout: blog
+layout: post
 ---
 
 ## testing out stuff
