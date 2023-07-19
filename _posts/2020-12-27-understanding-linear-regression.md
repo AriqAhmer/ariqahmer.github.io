@@ -71,7 +71,7 @@ $$ a\sum_{i=0}^n x_i^2 + b\sum_{i=0}^nx_i = \sum_{i=0}^n x_i y_i $$
 
 Now all that is left is to plug in our $$x$$ and our $$y$$ data and solve for the values of $$a$$ and $$b$$. If one is able to substitute one equation in the other and do further simplifications, then they may end up with the following equations for the coefficients. This will avoid having to solve the simultaneous equations and just plug in the values directly.
 
-$$ a = \frac{\sum{x}\sum{y} - n\sum{xy}}{{\sum{x}}^2 - \sum{x^2}} $$
+$$ a = \frac{\sum{x}\sum{y} - n\sum{xy}} { {\sum{x}}^2 - \sum{x^2} } $$
 
 $$ b = \frac{\sum{y} - a\sum{x}}{n} $$
 
