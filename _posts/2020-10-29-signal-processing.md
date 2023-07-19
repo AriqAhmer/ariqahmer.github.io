@@ -4,6 +4,7 @@ mathjax: true
 layout: blog
 ---
 
+## testing out stuff
 This article is about investigating an exponential signal and trying to model it using <q>simple</q> mathematical approach and a machine learning based approach. 
 In the day to day life of a scientist, most of the time we are invited by many forms of graphs. Some may represent the log phase of the growth of bacteria while others may represent a certain reaction cascading into faster rates over time. 
 We could also talk about the detection of electromagnetic waves after an explosive event such as a supernova. Whatever the case may be, we might come across some sort of noisy exponential graph. Note that this is just one example of a graph trend. 
