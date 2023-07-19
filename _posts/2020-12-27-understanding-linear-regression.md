@@ -26,42 +26,53 @@ Now let us look at the actual step by step process as to how we can solve such a
 We square the error $$e$$ and take the sum of all the errors.
 
 $$ E = \sum_{i=0}^n e_i^2 $$
+
 $$ E = \sum_{i=0}^n {(y_i - \hat{y_i})}^2 $$
+
 $$ E = \sum_{i=0}^n {[y_i - (ax_i + b)]}^2 $$
 
 ### Step 2
 We are now going to take the partial derivatives of our equation above, once with respect to $$a$$ and once with $$b$$. Therefore taking the two derivatives, we have:
 
 $$ \frac{\partial E}{\partial a} = \sum_{i=0}^n 2[y_i - (ax_i + b)]\cdot(-x_i) $$
+
 $$ \frac{\partial E}{\partial a} = -2\sum_{i=0}^n [y_i - (ax_i + b)]\cdot(x_i) $$
+
 $$ \frac{\partial E}{\partial a} = -2\sum_{i=0}^n [x_i y_i - ax_i^2 - bx_i] $$
 
 **and...**
 
 $$ \frac{\partial E}{\partial b} = \sum_{i=0}^n 2[y_i - (ax_i + b)]\cdot(-1) $$
+
 $$ \frac{\partial E}{\partial b} = -2\sum_{i=0}^n [y_i - ax_i - b] $$
 
 Now that we have the required derivatives, we equate them to zero to make the error have the minimum value. Hence we get the following equations.
 
 $$ \frac{\partial E}{\partial a} = 0 $$
+
 $$ -2\sum_{i=0}^n [x_i y_i - ax_i^2 - bx_i] = 0 $$
+
 $$ \sum_{i=0}^n [x_i y_i - ax_i^2 - bx_i] = 0 $$
 
 **and...**
 
 $$ \frac{\partial E}{\partial b} = 0 $$
+
 $$ -2\sum_{i=0}^n [y_i - ax_i - b] = 0 $$
+
 $$ \sum_{i=0}^n [y_i - ax_i - b] = 0 $$
 
 ### Step 3
 Rearranging the equations we end up with a set of 2 simultaneous equations for which we have to solve to find our coefficients $$a$$ (the slope) and $$b$$ (the y-intercept). The equations are:
 
 $$ a\sum_{i=0}^n x_i + nb = \sum_{i=0}^n y_i $$
+
 $$ a\sum_{i=0}^n x_i^2 + b\sum_{i=0}^nx_i = \sum_{i=0}^n x_i y_i $$
 
 Now all that is left is to plug in our $$x$$ and our $$y$$ data and solve for the values of $$a$$ and $$b$$. If one is able to substitute one equation in the other and do further simplifications, then they may end up with the following equations for the coefficients. This will avoid having to solve the simultaneous equations and just plug in the values directly.
 
 $$ a = \frac{\sum{x}\sum{y} - n\sum{xy}}{{\sum{x}}^2 - \sum{x^2}} $$
+
 $$ b = \frac{\sum{y} - a\sum{x}}{n} $$
 
 Now this about sums up what we need to know about regression in statistical term. **Now** we are going to focus on regression in **Machine Learning** approach. In ML, we often hear about the term "training a model". What this basically means is that, for example, we have a baby and the baby doesn't know anything. The baby tries and tries to do better at something each time, so it learns each time from its mistake and tries not to repeat it. Same thing we are going to discuss here. We are going to look at the learning algorithm of linear regression in machine learning.
@@ -75,6 +86,7 @@ Now $${\nabla}Q_i(\theta)$$ basically represents the partial derivative of our c
 Now that we have gotten the prerequisites, let us try and see how our "update" functions are going to look like. Let us notice one thing from our previous equations that is $$[\hat{y_i} - (ax_i + b)]$$ is actually our original error term $$e$$ so $$-2\sum [\hat{y} - (ax + b)]\cdot(x)$$ becomes $$-2\sum e\cdot(x)$$, for example.
 
 $$ a := a + {\alpha}e_i x_i $$
+
 $$ b := b + {\alpha}e_i $$
 
 **NOTE** that we had a $$-2$$ in our partial derivatives, so the constant **2** was ignored but notice that the negative sign yielded in the latter term being added instead of subtracted. Now the above explained it mathematically. How about we try and see in pseudocode how a code implementation could be like? The snippet below shows exactly that. (given `x` and `y` are lists containing their respective values).
