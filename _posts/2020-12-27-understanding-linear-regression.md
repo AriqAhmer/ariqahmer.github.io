@@ -58,7 +58,7 @@ $$ a\sum_{i=0}^n x_i^2 + b\sum_{i=0}^nx_i = \sum_{i=0}^n x_i y_i $$
 
 Now all that is left is to plug in our $$x$$ and our $$y$$ data and solve for the values of $$a$$ and $$b$$. If one is able to substitute one equation in the other and do further simplifications, then they may end up with the following equations for the coefficients. This will avoid having to solve the simultaneous equations and just plug in the values directly.
 
-$$ a = \frac{\sum{x}\sum{y} - n\sum{xy}}{{(\sum{x})}^2 - \sum{x^2}} $$
+$$ a = \frac{\sum{x}\sum{y} - n\sum{xy}}{{\sum{x}}^2 - \sum{x^2}} $$
 $$ b = \frac{\sum{y} - a\sum{x}}{n} $$
 
 Now this about sums up what we need to know about regression in statistical term. **Now** we are going to focus on regression in **Machine Learning** approach. In ML, we often hear about the term "training a model". What this basically means is that, for example, we have a baby and the baby doesn't know anything. The baby tries and tries to do better at something each time, so it learns each time from its mistake and tries not to repeat it. Same thing we are going to discuss here. We are going to look at the learning algorithm of linear regression in machine learning.
