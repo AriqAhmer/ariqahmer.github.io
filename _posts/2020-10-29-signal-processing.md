@@ -15,7 +15,7 @@ So let us dive into our investigation. The graph below shows a typical exponenti
 ![generated noisy signal](/assets/signal-processing/generated-noisy-signal.png)
 
 ### Method 1
-In this method we are going to use a simple regression model, mathematically speaking. We realise that the law of our regression model could hold to be $y = Ae^{Bx}$. In this case, we could linearize the equation then apply the Least Squares Method to find a system of normal equations. 
+In this method we are going to use a simple regression model, mathematically speaking. We realise that the law of our regression model could hold to be $$y = Ae^{Bx}$$. In this case, we could linearize the equation then apply the Least Squares Method to find a system of normal equations. 
 Then using a few selected data values for \(x\) and \(y\) we can perform the regression. However this is long and tedious! We could make use of the technology already available to us and use some online regression calculators. For our purpose, we can use [this calculator](https://keisan.casio.com/exec/system/14059930754231) to find the values of \(A\) and \(B\). 
 We are going to input the first 20 data values from our dataset (dataset is included in the project folder). We get our values as \(A=1.057826806\) and \(B=0.0502770095\). Using these values, we get the following graph.
 
