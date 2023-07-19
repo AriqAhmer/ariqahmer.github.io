@@ -16,8 +16,8 @@ So let us dive into our investigation. The graph below shows a typical exponenti
 
 ### Method 1
 In this method we are going to use a simple regression model, mathematically speaking. We realise that the law of our regression model could hold to be $$y = Ae^{Bx}$$. In this case, we could linearize the equation then apply the Least Squares Method to find a system of normal equations. 
-Then using a few selected data values for \(x\) and \(y\) we can perform the regression. However this is long and tedious! We could make use of the technology already available to us and use some online regression calculators. For our purpose, we can use [this calculator](https://keisan.casio.com/exec/system/14059930754231) to find the values of \(A\) and \(B\). 
-We are going to input the first 20 data values from our dataset (dataset is included in the project folder). We get our values as \(A=1.057826806\) and \(B=0.0502770095\). Using these values, we get the following graph.
+Then using a few selected data values for $$ x $$ and $$ y $$ we can perform the regression. However this is long and tedious! We could make use of the technology already available to us and use some online regression calculators. For our purpose, we can use [this calculator](https://keisan.casio.com/exec/system/14059930754231) to find the values of $$ A $$ and $$ B $$. 
+We are going to input the first 20 data values from our dataset (dataset is included in the project folder). We get our values as $$ A=1.057826806 $$ and $$ B=0.0502770095 $$. Using these values, we get the following graph.
 
 ![regression graph](/assets/signal-processing/regression.png)
 
@@ -37,5 +37,5 @@ Using our model, we achieve the following results.
 The results are simply too good! It's able to account for the periodic ups and downs in the data and does a far better job at predicting the values.
 
 ### Conclusion
-As we can see that using a normal naive mathematical model doesn't quite produce realistic results because more often then not, they seem to be <q>too perfect</q>. However it is useful when estimations are needed to be done fast. Mathematical models rather may be used to study a pattern over long term rather than being precise for shorter periods of time. 
+As we can see that using a normal naive mathematical model doesn't quite produce realistic results because more often then not, they seem to be "too perfect". However it is useful when estimations are needed to be done fast. Mathematical models rather may be used to study a pattern over long term rather than being precise for shorter periods of time. 
 We can see that using the advancments in the field of machine learning and artificial intellingence, we are better able to model realistic situations and behaviours. ML and AI are thechnically mathematical models in essence, but that's a topic for another day...
