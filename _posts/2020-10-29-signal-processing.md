@@ -3,7 +3,7 @@ title:  "Modelling and Predicting Signals"
 mathjax: true
 layout: post
 categories: media
-excerpt: lorem ipsum dolor sit amit
+excerpt: This article investigates a simulated exponential signal and modelling its behaviour using simple mathematical regression and using a neural network with perceptron layers to predict the behaviour of the signal with respect to time.
 ---
 
 This article is about investigating an exponential signal and trying to model it using "simple" mathematical approach and a machine learning based approach. 
