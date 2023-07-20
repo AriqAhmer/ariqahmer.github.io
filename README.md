@@ -4,7 +4,6 @@ permalink: "/about/"
 layout: page
 ---
 
-## A little about Myself
 Hello world! This is the first statement that almost every programmer is introduced to when they write their first program.
 This was introduced first in a book called "The C Programming Language". To this date it's used as the basic program to start off anyone who interest themselves in programming.
 I started off in the same manner - writing a program to print `Hello World!`. I started off my journey in programming in Java. Yep! Despite what everyone else starts off with, 
