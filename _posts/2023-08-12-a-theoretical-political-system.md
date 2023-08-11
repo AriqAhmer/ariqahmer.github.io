@@ -1,7 +1,7 @@
 ---
-title: "Solving World Politics (kind of...)"
-layout: post
-excerpt: Here is my take on how the world's political system can be improved (in a way... I guess...)
+title: "Solving World Politics"
+layout: "post"
+excerpt: "Here is my take on how the world's political system can be improved (in a way... I guess...)"
 ---
 
 In majority of the cases, a country is run by a party through democracy. Well there is no problem with democracy per say, but there is a problem (in my opinion) with how a decision is made and passed by the current government of that country.
