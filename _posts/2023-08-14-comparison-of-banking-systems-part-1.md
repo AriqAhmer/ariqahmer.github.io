@@ -69,7 +69,7 @@ $$ C^{\ast\ast} = C_{0}\alpha\text{exp}(\alpha t) - C_{0}{(1+i)}^{t} + C_{0} $$
 
 ## Parameter values
 - $$C_{0} = 100,000$$ for the initial capital
-- $$p = i = 10% = 0.1$$ as the profit and interest rates
+- $$p = i = 0.10$$ as the profit and interest rates
 - $$\alpha = 0.9$$ for best case
 - $$\alpha = 0.2$$ for intermediate case
 - $$\alpha = 0.05$$ for worst case
