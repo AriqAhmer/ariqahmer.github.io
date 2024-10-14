@@ -19,26 +19,33 @@ In this section, I go over how the current notation can be re-written to capture
 Below are the variables I tend to use for my investigations:
 
 $$p$$ is the previous node.
+
 $$q$$ is the next node.
+
 $$w(p, q) \in \mathbb{R}$$ is the weight going from node $p$ to node $q$.
 
-$$P = \{p_0, p_1, p_2, ..., p_{n-1}, 1\}$$ and $$p_n \in \mathbb{R}, \forall n \in \mathbb{N}$$ 
-$$Q = \{q_0, q_1, q_2, ..., q_{m-1}, 1\}$$ and $$q_m \in \mathbb{R}, \forall m \in \mathbb{N}$$ 
+$$P = \{p_0, p_1, p_2, ..., p_{n-1}, 1\}$$ and $$p_n \in \mathbb{R}, \forall n \in \mathbb{N}$$
+
+$$Q = \{q_0, q_1, q_2, ..., q_{m-1}, 1\}$$ and $$q_m \in \mathbb{R}, \forall m \in \mathbb{N}$$
+
 $$|Q|$$ is the cardinality of set $$Q$$ meaning, the number of elements in $$Q$$.
 
 $$E(\cdot, \cdot)$$ is an error function.
+
 $$A(\cdot)$$ is an activation function.
 
 ### Functions
 #### Neuron Function
 The neuron function $$\Gamma$$ takes the sum of the product of input value (node) $$p \in P$$ and its associated weight value (edge) $$w(p,q) \in W_q$$. The output of $$\Gamma$$ is the value for node $$q \in Q$$.
+
 $$ \Gamma (P, W_q) = \sum_{p \in P, w \in W_q} p \cdot w(p, q) $$
 
 #### Layer Function
 The layer function $$\Gamma^{*}$$ outputs $$m$$ nodes that describe a layer $$Q$$ in a Multilayer Perceptron (Deep Neural Network) model. It takes all the points in $$P$$ and the weights $$W_Q$$ which is the set of all weights (edges) between all nodes in $$P$$ and $$Q$$. It can be observed that if all the nodes in $$P$$ are connected to all the nodes in $$Q$$, then the total number of edges is $$n \times m$$. This is obtained as follows:
 
-$$|P| = n \quad \Rightarrow \quad |W_q| = n \quad \because \quad p \in P \Leftrightarrow w(p, q) \in W_q $$ 
-$$|Q| = m \quad \Rightarrow \quad |W_Q| = n \times m \quad \because \quad q \in Q \Leftrightarrow W_q \in W_Q$$ since $$q$$ connects to all $$n$$ edges in $$W_q$$ 
+$$ |P| = n \quad \Rightarrow \quad |W_q| = n \quad \because \quad p \in P \Leftrightarrow w(p, q) \in W_q $$
+
+$$ |Q| = m \quad \Rightarrow \quad |W_Q| = n \times m \quad \because \quad q \in Q \Leftrightarrow W_q \in W_Q \text{ since } q \text{ connects to all } n \text{ edges in } W_q $$ 
 
 Hence, the layer function is given as follows:
 
