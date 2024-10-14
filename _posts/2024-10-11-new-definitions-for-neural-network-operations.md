@@ -24,11 +24,11 @@ $$q$$ is the next node.
 
 $$w(p, q) \in \mathbb{R}$$ is the weight going from node $$p$$ to node $$q$$.
 
-$$P = \{p_0, p_1, p_2, ..., p_{n-1}, 1\} \text{ and } p_n \in \mathbb{R}, \forall n \in \mathbb{N}$$. 
+$$P = \{p_0, p_1, p_2, ..., p_{n-1}, 1\}$$ and $$p_n \in \mathbb{R}, \forall n \in \mathbb{N}$$. 
 
-$$Q = \{q_0, q_1, q_2, ..., q_{m-1}, 1\} \text{ and } q_m \in \mathbb{R}, \forall m \in \mathbb{N}$$. 
+$$Q = \{q_0, q_1, q_2, ..., q_{m-1}, 1\}$$ and $$q_m \in \mathbb{R}, \forall m \in \mathbb{N}$$. 
 
-$$\|Q\| \text{ is the cardinality of set } Q \text{ meaning, the number of elements in } Q$$. 
+$${|Q|}$$ is the cardinality of set $$Q$$ meaning, the number of elements in $$Q$$. 
 
 $$E(\cdot, \cdot)$$ is an error function.
 
