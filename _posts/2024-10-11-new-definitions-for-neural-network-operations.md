@@ -28,9 +28,9 @@ $P = \{p_0, p_1, p_2, ..., p_{n-1}, 1\}$ and $p_n \in \mathbb{R}, \forall n \in 
 
 $Q = \{q_0, q_1, q_2, ..., q_{m-1}, 1\}$ and $q_m \in \mathbb{R}, \forall m \in \mathbb{N}$. 
 
-\$|Q|\$ is the cardinality of set $Q$ meaning, the number of elements in $Q$. 
+${|Q|}$ is the cardinality of set $Q$ meaning, the number of elements in $Q$. 
 
-$E(\cdot, \cdot)$is an error function.
+$E(\cdot, \cdot)$ is an error function.
 
 $A(\cdot)$ is an activation function.
 
@@ -52,7 +52,7 @@ Hence, the layer function is given as follows:
 $$ \Gamma^{*} (P, W_Q) = \{A(q_m)\quad |\quad q_m = \Gamma_{m}(P, W_q), 0 \le m \le |Q|\} $$
 
 #### Model Set
-A model \$Q^*\$ is an **ordered** set where each element is a layer object i.e. the output of the layer function \$\Gamma^*\$.
+A model $Q^* $ is an **ordered** set where each element is a layer object i.e. the output of the layer function $\Gamma^* $.
 
 $$Q^* = \{Q_{n} \quad | \quad Q_{n} = \Gamma^*(Q_{n-1}, W_{Q_n}), \quad n,m \in \mathbb{N} \text{ and } 0 \le n \le m\}$$
 
@@ -65,7 +65,7 @@ From the definitions proposed above, the following can be noted:
 
 > If a model $Q^*$ has $n$ elements i.e. $n$ layers, then, the model has an input layer $Q_0$, hidden layers $Q_1$ to $Q_{n-1}$, and an output layer $Q_n$.
 
-Given that \$Q^*\$ is an **ordered set**, it follows that a **Feed Forward** operation occurs as $n$ increases from $1$ to $n$.
+Given that $Q^*$ is an **ordered set**, it follows that a **Feed Forward** operation occurs as $n$ increases from $1$ to $n$.
 
 ## Conclusion
-In summary, we have defined a new function $\Gamma$ that calculates the value of a neuron $q$ based on the **set** of values of the neurons $P$ it is connected to using weights/edges $W_q$. We also defined a set-generating function \$\Gamma^*\$ that outputs a **set** of neurons $Q$ for a layer based on the neurons from the previous layer $P$ and **all** its associated weights $W_Q$. We defined the ordered set \$Q^*\$ which contains all the layers of a neural network, where the first element $Q_0$ is the input layer and the $Q_n$ is the output layer. And finally, we noted that if $n$ increases from $1$ to $n$ in the set $Q^*$, it describes the feed forward operation of a traditional neural network.
+In summary, we have defined a new function $\Gamma$ that calculates the value of a neuron $q$ based on the **set** of values of the neurons $P$ it is connected to using weights/edges $W_q$. We also defined a set-generating function $\Gamma^* $ that outputs a **set** of neurons $Q$ for a layer based on the neurons from the previous layer $P$ and **all** its associated weights $W_Q$. We defined the ordered set $Q^* $ which contains all the layers of a neural network, where the first element $Q_0$ is the input layer and the $Q_n$ is the output layer. And finally, we noted that if $n$ increases from $1$ to $n$ in the set $Q^*$, it describes the feed forward operation of a traditional neural network.
