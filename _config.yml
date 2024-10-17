@@ -6,11 +6,26 @@ lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
+# My Edits
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# This option tells Jekyll to use GFM (GitHub Flavored Markdown)
+kramdown:
+  input: GFM
+
+# URL for the MathJax library
+mathjax_src: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
+
 # Layout
 show_excerpts: true        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
 minimal: false             # use a dark header
+mathjax: true
 
 # Menu
 
@@ -30,3 +45,4 @@ comments:
 
 plugins:
  - jekyll-feed
+ - jekyll-seo-tag
