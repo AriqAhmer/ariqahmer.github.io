@@ -28,7 +28,7 @@ $P = \{p_0, p_1, p_2, ..., p_{n-1}, 1\}$ and $p_n \in \mathbb{R}, \forall n \in 
 
 $Q = \{q_0, q_1, q_2, ..., q_{m-1}, 1\}$ and $q_m \in \mathbb{R}, \forall m \in \mathbb{N}$. 
 
-\( |Q| \) is the cardinality of set $Q$ meaning, the number of elements in $Q$. 
+$ \|Q\| $ is the cardinality of set $Q$ meaning, the number of elements in $Q$. 
 
 $E(\cdot, \cdot)$ is an error function.
 
@@ -43,9 +43,9 @@ $$ \Gamma (P, W_q) = \sum_{p \in P, w \in W_q} p \cdot w(p, q) $$
 #### Layer Function
 The layer function $\Gamma^{*}$ outputs $m$ nodes that describe a layer $Q$ in a Multilayer Perceptron (Deep Neural Network) model. It takes all the points in $P$ and the weights $W_Q$ which is the set of all weights (edges) between all nodes in $P$ and $Q$. It can be observed that if all the nodes in $P$ are connected to all the nodes in $Q$, then the total number of edges is $n \times m$. This is obtained as follows:
 
-$$ |P| = n \quad \Rightarrow \quad |W_q| = n \quad \because \quad p \in P \Leftrightarrow w(p, q) \in W_q $$
+$ \|P\| = n \quad \Rightarrow \quad \|W_q\| = n \quad \because \quad p \in P \Leftrightarrow w(p, q) \in W_q $
 
-$$ |Q| = m \quad \Rightarrow \quad |W_Q| = n \times m \quad \because \quad q \in Q \Leftrightarrow W_q \in W_Q \text{ since } q \text{ connects to all } n \text{ edges in } W_q $$ 
+$ \|Q\| = m \quad \Rightarrow \quad \|W_Q\| = n \times m \quad \because \quad q \in Q \Leftrightarrow W_q \in W_Q $ since $q$ connects to all $n$ edges in $W_q$ 
 
 Hence, the layer function is given as follows:
 
