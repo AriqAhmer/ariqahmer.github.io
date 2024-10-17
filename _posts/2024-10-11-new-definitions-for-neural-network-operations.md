@@ -28,7 +28,7 @@ $P = \{p_0, p_1, p_2, ..., p_{n-1}, 1\}$ and $p_n \in \mathbb{R}, \forall n \in 
 
 $Q = \{q_0, q_1, q_2, ..., q_{m-1}, 1\}$ and $q_m \in \mathbb{R}, \forall m \in \mathbb{N}$. 
 
-$|Q|$ is the cardinality of set $Q$ meaning, the number of elements in $Q$. 
+${|Q|}$ is the cardinality of set $Q$ meaning, the number of elements in $Q$. 
 
 $E(\cdot, \cdot)$is an error function.
 
