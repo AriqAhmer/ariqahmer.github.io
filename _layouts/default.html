@@ -39,17 +39,11 @@
   <div>{{ site.description | default: site.title }}</div>
   {% include menu.html menu=site.external %}
 </footer>
-{% endif %}
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: "$$", right: "$$", display: true},
-        {left: "$", right: "$", display: false}
-      ]
-    });
-  });
+  
+<!--   MathJax cdn  -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
+{% endif %}
 
 </html>
