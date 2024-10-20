@@ -56,7 +56,7 @@ $$y \Rightarrow y(\vec{w},\vec{h}) = \sum^{n}_{i=0} w_{i} \cdot h_{i}$$
 
 Meaning, in essence, we can breakdown as follows:
 
-$$E(t, s(y(w,h))) = \frac{1}{2} (t - s(y(w,h)))$$
+$$E(t, s(y(w,h))) = \frac{1}{2} (t - s(y(w,h)))^2$$
 
 Note that the above (and below) expression is just for **one** weight. Since we established that $h$ is constant, and we need to optimize the weight variable $w$, the following **chain rule** can be used to find the derivative of the error function $E$ with respect to (wrt) $w$ as follows:
 
