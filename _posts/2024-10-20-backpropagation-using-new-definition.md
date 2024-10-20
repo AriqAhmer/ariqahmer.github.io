@@ -84,7 +84,7 @@ $$w_{i+1} = w_{i} - \eta \cdot w_i \cdot \frac{dE}{dw_i}$$
 ## 3. Using the New Notation
 Using the new notations from [my previous article linked here](https://ariqahmer.github.io/new-definitions-for-neural-network-operations/), we can define the following variables (with very loose notations):
 1. $w(p_n, q_m)$ is the single weight that associates the value of the $n^{\text{th}}$ node in the current layer $p$, with the $m^\text{th}$ node in the next layer $q$.
-2. The output value of $\Gamma(P, W_{q_m})$, where $P = \{p_0, p_1, p_2, ..., p_{n-1}, 1\}$ is the value of node $q_m$.
+2. The output value of $\Gamma(P, W_{q_m})$, where $$P = \{p_0, p_1, p_2, ..., p_{n-1}, 1\}$$ is the value of node $q_m$.
 3. The set function $\Gamma^* (P, W_{Q_{h-1}})$ produces all the **normalized values for the nodes** $A(q) \in Q_h$ for a given layer $h$.
 4. The arbitrary error function $E(R, Q_h)$ is used to calculate the error between the ground truth $R$ and the output $Q_h$. Note that $R, Q_h \in \mathbb{R}^{a \times b}$ for $a,b \in \mathbb{N}$.
 
@@ -107,7 +107,7 @@ But since we know that $q \in Q$, and $W_Q$ contains all weights needed for the 
 
 $$\frac{d \Gamma^*_Q}{d \Gamma_Q} = \Gamma^{*'}_{Q}(P, W_Q) = A'(Q)$$
 
-Which means the derivative of the activation function $A'$ is applied to all nodes $q \in Q$. We can also note a similar simplification for the last term as:
+Which means the derivative of the activation function $A\'$ is applied to all nodes $q \in Q$. We can also note a similar simplification for the last term as:
 
 $$\frac{d \Gamma_Q}{d W_Q} = \Gamma'(P, W_Q)$$
 
