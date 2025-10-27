@@ -1,5 +1,5 @@
 ---
-title: "The Imbalance of Work + MSc + Personal Life ($\text{Var}(W+M+P) \ne 0$)"
+title: "The Imbalance of Work + MSc + Personal Life"
 layout: post
 mathjax: true
 excerpt: "Things that have happened and have been happening is affecting me in ways I never imagined. Just read it if interested. Don't force yourself if you don't want to."
